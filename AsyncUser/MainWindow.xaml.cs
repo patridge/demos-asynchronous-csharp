@@ -95,8 +95,8 @@ namespace AsyncUser {
                 }
             }
             // Wait for final digit task;
-            await unlocked;
-            return true;
+            var finalCorrect = await unlocked;
+            return finalCorrect;
         }
         #endregion
 
