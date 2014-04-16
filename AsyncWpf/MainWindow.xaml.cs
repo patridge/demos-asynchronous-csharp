@@ -76,6 +76,17 @@ namespace AsyncWpf {
             //    });
             //});
             #endregion
+
+			#region "success3"
+			//Task.Run(() => {
+			//    // Do the long stuff off-thread.
+			//    return SlowService.GetNextNumber();
+			//}).ContinueWith((task) => {
+			//    // Attach a continuation to handle task completion.
+			//    int nextNumber = task.Result;
+			//    AsyncFailButton.Content = nextNumber;
+			//}, TaskScheduler.FromCurrentSynchronizationContext());
+			#endregion
         }
 
         private async void AsyncAwaitButton_Click(object sender, RoutedEventArgs e) {
